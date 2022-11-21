@@ -1,0 +1,27 @@
+.h-input-text {
+  display: flex;
+  flex-direction: column;
+  input {
+    border: 1px solid var(--ink-lightest);
+    background-color: var(--pebble-lightest);
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 36px;
+    padding: 0 10px;
+    color: var(--ink);
+    width: 365px;
+  }
+  &__label {
+    display: flex;
+    margin: 10px 0;
+  }
+  &__required {
+    color: var(--cherry);
+    padding: 0 5px;
+  }
+  &__error {
+    font-size: 12px;
+    color: var(--cherry);
+    padding-top: 5px;
+  }
+}

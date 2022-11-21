@@ -1,0 +1,119 @@
+.h-button {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  &:active,
+  &:hover {
+    transition: all 0.1s ease-in-out;
+  }
+  &:focus-visible {
+    outline: solid 2px var(--sapphire);
+  }
+}
+
+.h-button {
+  &--shadow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  }
+  //types
+  &--primary {
+    background-color: var(--sapphire);
+    color: white;
+    &:hover {
+      background-color: var(--sapphire-dark);
+    }
+    &:active {
+      background-color: var(--sapphire);
+      box-shadow: inset 0 0 0 2px var(--sapphire-dark);
+    }
+  }
+
+  &--outlined {
+    background-color: var(--pebble-lightest);
+    border: 1px solid var(--ink-lighter);
+    color: var(--ink-lighter);
+    &:hover {
+      background-color: var(--pebble-lightest);
+      border: 1px solid var(--ink);
+      color: var(--ink);
+    }
+    &:active {
+      background-color: var(--pebble-lighter);
+    }
+  }
+
+  &--ghost {
+    background-color: var(--pebble-lightest);
+    box-shadow: none;
+    color: var(--ink-lighter);
+    &:hover {
+      background-color: var(--pebble-lightest);
+      color: var(--ink);
+    }
+    &:active {
+      background-color: var(--pebble-lighter);
+    }
+  }
+
+  &--status-red {
+    background-color: var(--cherry);
+    color: var(--pebble-lightest);
+    &:hover {
+      background-color: var(--cherry-dark);
+    }
+    &:active {
+      background-color: var(--cherry);
+      box-shadow: inset 0 0 0 2px var(--cherry-dark);
+    }
+  }
+  &--status-green {
+    background-color: var(--lime);
+    color: var(--pebble-lightest);
+    &:hover {
+      background-color: var(--lime-dark);
+    }
+    &:active {
+      background-color: var(--lime);
+      box-shadow: inset 0 0 0 2px var(--lime-dark);
+    }
+  }
+  //disabled
+  &--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  //sizes
+  &--large {
+    height: 48px;
+    padding: 0 26px;
+    min-width: 180px;
+  }
+
+  &--medium {
+    height: 36px;
+    padding: 0 8px;
+    min-width: 100px;
+  }
+
+  &--small {
+    height: 30px;
+    padding: 0 8px;
+    min-width: 32px;
+  }
+  &--fullWidth {
+    width: 100%;
+  }
+}
+//Exceptions for ghost buttons
+.ta-web-ui-button--ghost.ta-web-ui-button--large {
+  padding: 0 10px;
+  min-width: 48px;
+}
+.ta-web-ui-button--ghost.ta-web-ui-button--medium {
+  padding: 0 10px;
+  min-width: 36px;
+}

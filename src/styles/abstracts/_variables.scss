@@ -1,0 +1,74 @@
+$media-xs: 400px;
+$media-s: 480px;
+$media-m: 767px;
+$media-l: 960px;
+$media-xl: 1140px;
+$media-xxl: 1320px;
+* {
+  // INK
+  --ink: #1a1a1a;
+  --ink-light: #535254;
+  --ink-lighter: #727272;
+  --ink-lightest: #9e9ea1;
+  --ink-darker: #2d2d2d;
+
+  //PEBBLE
+  --pebble: #c2c2c8;
+  --pebble-light: #eaeaec;
+  --pebble-lighter: #f8f8f8;
+  --pebble-lightest: #fdfdfd;
+
+  //OCEAN
+  --ocean: #0e4c5b;
+  --ocean-dark: #073847;
+  --ocean-light: #3a717f;
+  --ocean-lighter: #c0ccd7;
+  --ocean-lightest: #f4f8fd;
+
+  //SPEARMINT
+  --spearmint: #218477;
+  --spearmint-dark: #1f7267;
+  --spearmint-light: #22a78e;
+  --spearmint-lighter: #28c6a8;
+  --spearmint-lightest: #8ce9d0;
+
+  //EGGPLANT
+  --eggplant: #390293;
+  --eggplant-dark: #250062;
+  --eggplant-light: #6644c0;
+  --eggplant-lighter: #ad91f8;
+  --eggplant-lightest: #ece4ff;
+
+  //LIME
+  --lime: #0ea205;
+  --lime-dark: #0c8b04;
+  --lime-light: #5dc757;
+
+  //CHERRY
+  --cherry: #c34044;
+  --cherry-dark: #ab3236;
+  --cherry-light: #e5565b;
+
+  //HONEY
+  --honey: #ffbf1f;
+  --honey-dark: #e8a500;
+  --honey-light: #ffd260;
+  --honey-lighter: #ffecba;
+
+  //LAVENDER
+  --lavender: #4b4784;
+  --lavender-dark: #393568;
+  --lavender-light: #5f5b9c;
+  --lavender-lighter: #a9a5e4;
+  --lavender-lightest: #dbd9f7;
+
+  //SAPPHIRE
+  --sapphire: #1179ce;
+  --sapphire-dark: #0b5ea2;
+  --sapphire-light: #2995ee;
+  --sapphire-lighter: #a2d5ff;
+  --sapphire-lightest: #daebf8;
+
+  //GHOST WHITE
+  --ghost-white: #f8fcff;
+}

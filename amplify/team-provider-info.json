@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-hungernetapp-dev-125228-authRole",
+      "UnauthRoleArn": "arn:aws:iam::037096477157:role/amplify-hungernetapp-dev-125228-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::037096477157:role/amplify-hungernetapp-dev-125228-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-hungernetapp-dev-125228-deployment",
+      "UnauthRoleName": "amplify-hungernetapp-dev-125228-unauthRole",
+      "StackName": "amplify-hungernetapp-dev-125228",
+      "StackId": "arn:aws:cloudformation:us-east-1:037096477157:stack/amplify-hungernetapp-dev-125228/26d95560-65a5-11ed-8896-0a922afba10f",
+      "AmplifyAppId": "d1f7gnwvxtfmxb"
+    },
+    "categories": {
+      "auth": {
+        "hungernetapp67e9cf38": {}
+      }
+    }
+  }
+}

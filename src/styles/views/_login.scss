@@ -1,0 +1,95 @@
+.h-login-container {
+  margin: auto;
+  margin-top: 213px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 440px;
+  height: 276px;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+.h-login {
+  &__card {
+    padding: 32px 52px;
+    min-height: 385px;
+    max-width: 470px;
+    min-width: 470px;
+    background-color: #ffffff;
+    @media screen and (max-width: $media-s) {
+      max-width: 310px;
+      min-width: 310px;
+      padding: 32px;
+    }
+  }
+}
+
+.h-auth-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  gap: 22px;
+  h1 {
+    @media screen and (max-width: $media-s) {
+      font-size: 24px;
+    }
+  }
+}
+.h-auth-form {
+  &__input {
+    width: 100%;
+    height: 48px !important;
+  }
+}
+
+.h-input-dropdown {
+  border-radius: 4px;
+  height: 36px;
+  padding: 0 10px;
+  color: var(--ink);
+  width: 365px;
+  &__options {
+    color: var(--ink);
+    font-size: 14px;
+    line-height: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.3);
+    transform-origin: top left;
+    transform: scaleY(0);
+    // transition: 0.3s ease;
+    transition: 251ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, 167ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    background-color: var(--pebble-lightest);
+    z-index: 10;
+    opacity: 0;
+    max-height: 170px;
+    display: flex;
+    flex-direction: column;
+    &--open {
+      outline: none;
+      transform: scaleY(1);
+      opacity: 1;
+    }
+
+    &--bigger {
+      max-height: 300px !important;
+    }
+
+    &--top {
+      top: unset;
+      bottom: 0;
+      transform-origin: bottom right;
+      max-height: calc((34px * 12) + 5px);
+    }
+  }
+}

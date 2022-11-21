@@ -1,0 +1,47 @@
+.h-navigation {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin: auto;
+  min-height: 70px;
+  padding: 20px 70px;
+  background-color: #05164d;
+  &__item {
+    color: var(--pebble-lightest);
+    text-decoration: underline;
+    padding: 13px 25px;
+  }
+  &__logout {
+    &--text {
+      margin: auto;
+      color: #05164d;
+      font-weight: bold;
+      font-size: 16px;
+    }
+  }
+  &-logo {
+    cursor: pointer;
+    margin: auto 0;
+  }
+  &--guest {
+    background-color: var(--pebble-lightest);
+  }
+  @media screen and (max-width: $media-l) {
+    padding: 10px 21px;
+    min-height: 70px;
+  }
+  &-info {
+    display: flex;
+    color: var(--pebble-lightest);
+    justify-content: flex-start;
+    padding: 20px 70px;
+    flex: 1;
+    &__username {
+      font-size: 18px;
+    }
+  }
+}
+
+.selected {
+  font-style: italic;
+}

@@ -1,0 +1,40 @@
+.h-list__item {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+  &--action {
+    margin-left: auto;
+  }
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 4px;
+    &--subheader {
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 20px;
+      color: #535254;
+    }
+    &--title {
+      color: #1a1a1a;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 24px;
+
+      &__lighter {
+        font-weight: 500;
+      }
+    }
+    &--description {
+      color: #1a1a1a;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 20px;
+      font-weight: 500;
+    }
+  }
+}
