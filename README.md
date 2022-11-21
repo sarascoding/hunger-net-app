@@ -5,9 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Tech Stack
 
 Tech stack for this app:
-Authentication - AWS Cognito with custom lambda trigger to confirm user created by admin
-Backend APIs (GraphQL) - AWS AppSync with Multi-table design in DynamoDB (custom resolvers)
-Tables in DynamoDB - UserTable, RestaurantTable, MenuTable, MenuItemTable, OrderTable
+- Authentication: AWS Cognito with custom lambda trigger to confirm user created by admin
+- Backend APIs (GraphQL): AWS AppSync with Multi-table design in DynamoDB (custom resolvers)
+- Tables in DynamoDB: UserTable, RestaurantTable, MenuTable, MenuItemTable, OrderTable
 
 Frontend libraries: React, Redux/toolkit, React Testing Library
 
